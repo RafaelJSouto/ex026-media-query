@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu </span>
+
+        <menu id="itens">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Serviços</a></li>
+                <li> <a href="#">Clientes</a></li>
+                <li> <a href="#">Contacto</a></li>
+                <li> <a href="#">Trabalhe Conosco</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+                <h2>Testando Media Queries</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus eaque, optio sit vitae omnis sunt consectetur atque ipsam ipsa perspiciatis assumenda. Voluptatem quae eum aut modi a quis voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nemo perferendis facere excepturi. Fuga non debitis exercitationem tempore dolor nisi sapiente. Iure dolorum distinctio tempora neque pariatur nesciunt delectus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem expedita nihil sequi et quam alias similique quia reiciendis quibusdam in, ipsum magnam tenetur labore, obcaecati unde ipsam nulla ut.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis omnis temporibus possimus, ipsam modi, sequi tempora dolor maiores cupiditate totam ducimus consequuntur nulla laudantium, facere sapiente et. Eius, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod saepe repellat facere cum? Quisquam iste quidem vero nostrum, mollitia molestiae hic, dolore saepe blanditiis molestias qui voluptas reiciendis voluptates.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus eaque, optio sit vitae omnis sunt consectetur atque ipsam ipsa perspiciatis assumenda. Voluptatem quae eum aut modi a quis voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nemo perferendis facere excepturi. Fuga non debitis exercitationem tempore dolor nisi sapiente. Iure dolorum distinctio tempora neque pariatur nesciunt delectus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem expedita nihil sequi et quam alias similique quia reiciendis quibusdam in, ipsum magnam tenetur labore, obcaecati unde ipsam nulla ut.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis omnis temporibus possimus, ipsam modi, sequi tempora dolor maiores cupiditate totam ducimus consequuntur nulla laudantium, facere sapiente et. Eius, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod saepe repellat facere cum? Quisquam iste quidem vero nostrum, mollitia molestiae hic, dolore saepe blanditiis molestias qui voluptas reiciendis voluptates.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus eaque, optio sit vitae omnis sunt consectetur atque ipsam ipsa perspiciatis assumenda. Voluptatem quae eum aut modi a quis voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nemo perferendis facere excepturi. Fuga non debitis exercitationem tempore dolor nisi sapiente. Iure dolorum distinctio tempora neque pariatur nesciunt delectus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem expedita nihil sequi et quam alias similique quia reiciendis quibusdam in, ipsum magnam tenetur labore, obcaecati unde ipsam nulla ut.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis omnis temporibus possimus, ipsam modi, sequi tempora dolor maiores cupiditate totam ducimus consequuntur nulla laudantium, facere sapiente et. Eius, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod saepe repellat facere cum? Quisquam iste quidem vero nostrum, mollitia molestiae hic, dolore saepe blanditiis molestias qui voluptas reiciendis voluptates.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus eaque, optio sit vitae omnis sunt consectetur atque ipsam ipsa perspiciatis assumenda. Voluptatem quae eum aut modi a quis voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nemo perferendis facere excepturi. Fuga non debitis exercitationem tempore dolor nisi sapiente. Iure dolorum distinctio tempora neque pariatur nesciunt delectus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem expedita nihil sequi et quam alias similique quia reiciendis quibusdam in, ipsum magnam tenetur labore, obcaecati unde ipsam nulla ut.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis omnis temporibus possimus, ipsam modi, sequi tempora dolor maiores cupiditate totam ducimus consequuntur nulla laudantium, facere sapiente et. Eius, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod saepe repellat facere cum? Quisquam iste quidem vero nostrum, mollitia molestiae hic, dolore saepe blanditiis molestias qui voluptas reiciendis voluptates.
+                </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block')
+            itens.style.display = 'none'
+            else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

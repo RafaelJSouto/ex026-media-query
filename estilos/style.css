@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/*CSS PARA DAR ESTILO A BARRA DE RODAGEM*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar- track{
+    background: #253659;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background: #f27457c3;
+    border-radius: 30px;
+}
+
+body, html{
+    background-color: #253659;
+}
+header{
+    background-color: #F27457;
+}
+header h1{
+    padding: 10px;
+    text-align: center;
+}
+span#burguer{
+    background-color: #F27457;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+menu{
+    display: none;
+    
+}
+menu, ul{
+    list-style-type: none;
+    
+}
+menu a{
+    
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #F27457;
+    color: #fff;
+    border-top: 2px solid #F27457;
+    transition-duration: 0.5s;
+    border-radius: 4px;
+    
+}
+menu a:hover{
+    background-color: #be5a445d;
+    color: black
+    
+}
+main{
+    width: 90vw;
+    padding: 10px;
+    margin: auto ;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+article h2{
+    padding-bottom: 20px;
+}
+article p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
